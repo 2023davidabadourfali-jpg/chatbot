@@ -1,0 +1,109 @@
+{
+  "inicio": {
+    "id": "inicio",
+    "texto": "¡Hola, crack! ⚽ Soy Faro, tu bot futbolero preferido. Antes de arrancar con los pases de primera, ¿cómo te llamás?",
+    "requiereInput": true,
+    "siguienteInput": "bienvenida"
+  },
+  "bienvenida": {
+    "id": "bienvenida",
+    "texto": "¡Qué grande {nombre}! Tremendo nombre para levantar la Copa del Mundo. 🏆 ¿Por dónde querés arrancar a jugar hoy?",
+    "opciones": [
+      { "texto": "🛡️ Equipos de fútbol", "siguiente": "menu_equipos" },
+      { "texto": "📊 Divisiones y Ligas", "siguiente": "menu_divisiones" },
+      { "texto": "🔮 Predicciones de partidos", "siguiente": "menu_predicciones" },
+      { "texto": "❌ Terminar conversación", "siguiente": "despedida" }
+    ]
+  },
+  "menu_equipos": {
+    "id": "menu_equipos",
+    "texto": "¡Esa es la actitud, {nombre}! Los clubes son pura pasión. ¿Qué consulta querés hacer sobre los equipos?",
+    "opciones": [
+      { "texto": "⭐ Clubes más ganadores", "siguiente": "info_ganadores" },
+      { "texto": "🔥 El clásico más picante", "siguiente": "info_clasico" },
+      { "texto": "🔙 Volver al Menú Principal", "siguiente": "bienvenida" },
+      { "texto": "❌ Terminar conversación", "siguiente": "despedida" }
+    ]
+  },
+  "info_ganadores": {
+    "id": "info_ganadores",
+    "texto": "A nivel internacional, el Real Madrid domina con 15 Champions, mientras que en Sudamérica, Independiente sigue ostentando sus 7 Libertadores. ¡Pura historia, {nombre}!",
+    "opciones": [
+      { "texto": "🔙 Volver al Menú de Equipos", "siguiente": "menu_equipos" },
+      { "texto": "🏠 Menú Principal", "siguiente": "bienvenida" },
+      { "texto": "❌ Terminar conversación", "siguiente": "despedida" }
+    ]
+  },
+  "info_clasico": {
+    "id": "info_clasico",
+    "texto": "El Boca vs. River o el Real Madrid vs. Barcelona siempre paralizan al planeta entero. ¡Para verlo con la camiseta puesta y comer unas buenas empanadas!",
+    "opciones": [
+      { "texto": "🔙 Volver al Menú de Equipos", "siguiente": "menu_equipos" },
+      { "texto": "🏠 Menú Principal", "siguiente": "bienvenida" },
+      { "texto": "❌ Terminar conversación", "siguiente": "despedida" }
+    ]
+  },
+  "menu_divisiones": {
+    "id": "menu_divisiones",
+    "texto": "A ver {nombre}, ¿qué competencia te quita el sueño todas las semanas?",
+    "opciones": [
+      { "texto": "🏆 Liga Local y Copas", "siguiente": "info_liga_local" },
+      { "texto": "🌍 Torneos Internacionales", "siguiente": "info_internacional" },
+      { "texto": "🔙 Volver al Menú Principal", "siguiente": "bienvenida" },
+      { "texto": "❌ Terminar conversación", "siguiente": "despedida" }
+    ]
+  },
+  "info_liga_local": {
+    "id": "info_liga_local",
+    "texto": "Las ligas locales tienen un ritmo frenético: partidos picantes,VAR controvertido y directores técnicos al borde del infarto en cada fecha. ¡Fútbol total!",
+    "opciones": [
+      { "texto": "🔙 Volver a Divisiones", "siguiente": "menu_divisiones" },
+      { "texto": "🏠 Menú Principal", "siguiente": "bienvenida" },
+      { "texto": "❌ Terminar conversación", "siguiente": "despedida" }
+    ]
+  },
+  "info_internacional": {
+    "id": "info_internacional",
+    "texto": "La Champions League y la Copa Libertadores son la cumbre del planeta fútbol. ¡Solo para valientes, {nombre}!",
+    "opciones": [
+      { "texto": "🔙 Volver a Divisiones", "siguiente": "menu_divisiones" },
+      { "texto": "🏠 Menú Principal", "siguiente": "bienvenida" },
+      { "texto": "❌ Terminar conversación", "siguiente": "despedida" }
+    ]
+  },
+  "menu_predicciones": {
+    "id": "menu_predicciones",
+    "texto": "Mi bola de cristal futbolera está encendida 🔮, {nombre}. ¿De qué querés ver la predicción?",
+    "opciones": [
+      { "texto": "🥇 ¿Quién sale campeón?", "siguiente": "prediccion_campeon" },
+      { "texto": "🎯 ¿Quién será el goleador?", "siguiente": "prediccion_goleador" },
+      { "texto": "🔙 Volver al Menú Principal", "siguiente": "bienvenida" },
+      { "texto": "❌ Terminar conversación", "siguiente": "despedida" }
+    ]
+  },
+  "prediccion_campeon": {
+    "id": "prediccion_campeon",
+    "texto": "Mis algoritmos dicen que el campeón será el que más goles haga y no sufra lesiones en los minutos de descuento... ¡Un análisis irrefutable! 😎",
+    "opciones": [
+      { "texto": "🔙 Volver a Predicciones", "siguiente": "menu_predicciones" },
+      { "texto": "🏠 Menú Principal", "siguiente": "bienvenida" },
+      { "texto": "❌ Terminar conversación", "siguiente": "despedida" }
+    ]
+  },
+  "prediccion_goleador": {
+    "id": "prediccion_goleador",
+    "texto": "El próximo goleador será aquel delantero que ejecute los penales sin dudar y se posicione bien en las pelotas paradas. ¡Guardá este dato, {nombre}!",
+    "opciones": [
+      { "texto": "🔙 Volver a Predicciones", "siguiente": "menu_predicciones" },
+      { "texto": "🏠 Menú Principal", "siguiente": "bienvenida" },
+      { "texto": "❌ Terminar conversación", "siguiente": "despedida" }
+    ]
+  },
+  "despedida": {
+    "id": "despedida",
+    "texto": "¡Un gusto haber jugado este partido con vos, {nombre}! ⚽ Nos vemos en la próxima fecha.",
+    "opciones": [
+      { "texto": "🔄 Volver a empezar", "siguiente": "inicio" }
+    ]
+  }
+}
